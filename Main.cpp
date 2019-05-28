@@ -3,7 +3,7 @@
 // サウンドノベル風文字列描画基本
 #include "DxLib.h"
 
-// 文字のサイズ
+// 文字のサイズaaa
 #define MOJI_SIZE 24
 
 int DrawPointX, DrawPointY;	// 文字列描画の位置
