@@ -151,6 +151,7 @@
     <ClCompile Include="D:\2年後期\novelgame\Rse\Main.cpp" />
     <ClCompile Include="D:\2年後期\novelgame\Rse\MainGameScene.cpp" />
     <ClCompile Include="D:\2年後期\novelgame\Rse\TitleScene.cpp" />
+    <ClCompile Include="Src\Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
