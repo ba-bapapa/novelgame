@@ -147,11 +147,6 @@
     <ClCompile Include="D:\2年後期\novelgame\Lib\Easy\TiledMap.cpp" />
     <ClCompile Include="D:\2年後期\novelgame\Lib\Easy\TweenAnimation.cpp" />
     <ClCompile Include="D:\2年後期\novelgame\Lib\Easy\UniformBuffer.cpp" />
-    <ClCompile Include="D:\2年後期\novelgame\Rse\Audio.cpp" />
-    <ClCompile Include="D:\2年後期\novelgame\Rse\Main.cpp" />
-    <ClCompile Include="D:\2年後期\novelgame\Rse\MainGameScene.cpp" />
-    <ClCompile Include="D:\2年後期\novelgame\Rse\TitleScene.cpp" />
-    <ClCompile Include="Src\Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -171,9 +166,6 @@
     <ClInclude Include="D:\2年後期\novelgame\Lib\Easy\TiledMap.h" />
     <ClInclude Include="D:\2年後期\novelgame\Lib\Easy\TweenAnimation.h" />
     <ClInclude Include="D:\2年後期\novelgame\Lib\Easy\UniformBuffer.h" />
-    <ClInclude Include="D:\2年後期\novelgame\Rse\Audio.h" />
-    <ClInclude Include="D:\2年後期\novelgame\Rse\MainGameScene.h" />
-    <ClInclude Include="D:\2年後期\novelgame\Rse\TitleScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

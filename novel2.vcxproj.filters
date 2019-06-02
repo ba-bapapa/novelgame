@@ -54,21 +54,6 @@
     <ClCompile Include="D:\2年後期\novelgame\Lib\Easy\UniformBuffer.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
-    <ClCompile Include="D:\2年後期\novelgame\Rse\Main.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="D:\2年後期\novelgame\Rse\Audio.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="D:\2年後期\novelgame\Rse\MainGameScene.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="D:\2年後期\novelgame\Rse\TitleScene.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\Source.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -115,15 +100,6 @@
     </ClInclude>
     <ClInclude Include="D:\2年後期\novelgame\Lib\Easy\UniformBuffer.h">
       <Filter>ソース ファイル\Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\2年後期\novelgame\Rse\Audio.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\2年後期\novelgame\Rse\MainGameScene.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\2年後期\novelgame\Rse\TitleScene.h">
-      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
