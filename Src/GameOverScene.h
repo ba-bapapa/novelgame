@@ -1,24 +1,24 @@
-/**
-* @file GameOverScene.h
-*/
 #ifndef GAMEOVERSCENE_H_INCLUDED
 #define GAMEOVERSCENE_H_INCLUDED
 #include "Scene.h"
+#include"Sprite.h"
+#include<vector>
 
-/**
-* ゲームオーバー画面.
-*/
-class GameOverScene : public Scene
-{
+class GameOverScene :public Scene {
 public:
-	GameOverScene() : Scene("GameOverScene") {}
+	GameOverScene() :Scene("GameOverScene") {}
 	virtual ~GameOverScene() = default;
 
-	virtual bool Initialize() override { return true; }
+	virtual bool Initialize() override;
 	virtual void ProcessInput() override;
-	virtual void Update(float) override {}
-	virtual void Render() override {}
+	virtual void Update(float) override;
+	virtual void Render()override;
 	virtual void Finalize() override {}
-};
 
-#endif // GAMEOVERSCENE_H_INCLUDED
+
+private:
+	bool flag = false;
+	std::vector<Sprite>sprites;
+	SpriteRenderer spriteRenderer;
+};
+#endif // !GAMEOVERSCENE_H_INCLUDED
