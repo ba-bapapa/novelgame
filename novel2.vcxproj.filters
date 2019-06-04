@@ -19,12 +19,6 @@
     <None Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\font.fnt">
       <Filter>リソース ファイル</Filter>
     </None>
-    <None Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\Sprite.frag">
-      <Filter>リソース ファイル</Filter>
-    </None>
-    <None Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\Sprite.vert">
-      <Filter>リソース ファイル</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\TitleScene.h">
@@ -106,9 +100,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\enter_dungeon.jpg">
-      <Filter>リソース ファイル</Filter>
-    </Image>
     <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\font_0.tga">
       <Filter>リソース ファイル</Filter>
     </Image>
@@ -116,9 +107,6 @@
       <Filter>リソース ファイル</Filter>
     </Image>
     <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\GameOver.tga">
-      <Filter>リソース ファイル</Filter>
-    </Image>
-    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\hyouga.jpg">
       <Filter>リソース ファイル</Filter>
     </Image>
     <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\TitleBg.tga">

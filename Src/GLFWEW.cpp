@@ -4,16 +4,16 @@
 #include "GLFWEW.h"
 #include<iostream>
 namespace GLFWEW {
-/**
-*GLFWからのエラー報告を処理する
-*/
+	/**
+	*GLFWからのエラー報告を処理する
+	*/
 	void ErrorCallback(int error, const char*desc) {
 		std::cerr << "ERROR:" << desc << std::endl;
 	}
 
-/**
-*シングルトンインスタンスを取得する
-*/
+	/**
+	*シングルトンインスタンスを取得する
+	*/
 	Window&Window::Instance() {
 		static Window instance;
 		return instance;
@@ -84,7 +84,7 @@ namespace GLFWEW {
 	*/
 	void Window::SwapBuffers()const {
 		glfwPollEvents();
-		
+
 		glfwSwapBuffers(window);
 	}
 	bool Window::IsKeyPressed(int key)const {
@@ -159,7 +159,7 @@ namespace GLFWEW {
 		//アナログ入力とボタン入力を取得
 		int axesCount, buttonCount;
 		const float*axes = glfwGetJoystickAxes(GLFW_JOYSTICK_1, &axesCount);
-		const uint8_t*buttons = glfwGetJoystickButtons(GLFW_JOYSTICK_1,&buttonCount);
+		const uint8_t*buttons = glfwGetJoystickButtons(GLFW_JOYSTICK_1, &buttonCount);
 
 		//両方の配列がnullptrでなく、最低限必要なデータ数を満たしていれば勇尾樹奈ゲームパッドが接続される
 		if (axes&&buttons&&axesCount >= 2 && buttonCount >= 8) {
@@ -183,9 +183,9 @@ namespace GLFWEW {
 			static const struct {
 				int dataIndex;
 				uint32_t gamepadBit;
-			}keyMap[]={
-				{GAMEPAD_BUTTON_A,GamePad::A},
-				{GAMEPAD_BUTTON_B,GamePad::B},
+			}keyMap[] = {
+				{ GAMEPAD_BUTTON_A,GamePad::A },
+			{ GAMEPAD_BUTTON_B,GamePad::B },
 			{ GAMEPAD_BUTTON_X,GamePad::X },
 			{ GAMEPAD_BUTTON_Y,GamePad::Y },
 			{ GAMEPAD_BUTTON_L,GamePad::L },
@@ -195,7 +195,7 @@ namespace GLFWEW {
 			{ GAMEPAD_BUTTON_DOWN,GamePad::DPAD_DOWN },
 			{ GAMEPAD_BUTTON_LEFT,GamePad::DPAD_LEFT },
 			{ GAMEPAD_BUTTON_RIGHT,GamePad::DPAD_RIGHT },
-		};
+			};
 			for (const auto&e : keyMap) {
 				if (buttons[e.dataIndex] == GLFW_PRESS) {
 					gamepad.buttons |= e.gamepadBit;
@@ -213,7 +213,7 @@ namespace GLFWEW {
 				int keyCode;
 				uint32_t gamepadBit;
 			}keyMap[]{
-				{GLFW_KEY_J,GamePad::A},
+				{ GLFW_KEY_J,GamePad::A },
 			{ GLFW_KEY_K,GamePad::B },
 			{ GLFW_KEY_U,GamePad::X },
 			{ GLFW_KEY_I,GamePad::Y },
@@ -222,9 +222,9 @@ namespace GLFWEW {
 			{ GLFW_KEY_ENTER,GamePad::START },
 			{ GLFW_KEY_W,GamePad::DPAD_UP },
 			{ GLFW_KEY_A,GamePad::DPAD_LEFT },
-			{ GLFW_KEY_S,GamePad::DPAD_DOWN},
+			{ GLFW_KEY_S,GamePad::DPAD_DOWN },
 			{ GLFW_KEY_D,GamePad::DPAD_RIGHT },
-		};
+			};
 			for (const auto&e : keyMap) {
 				const int key = glfwGetKey(window, e.keyCode);
 				if (key == GLFW_PRESS) {

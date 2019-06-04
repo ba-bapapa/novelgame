@@ -11,6 +11,9 @@ bool GameOverScene::Initialize() {
 	Sprite spr(Texture::Image2D::Create("Res/GameOver.tga"));
 	spr.Scale(glm::vec2(2));
 	sprites.push_back(spr);
+	fontRenderer.Init(1000);
+	fontRenderer.LoadFromFile("Res/font.fnt");
+
 	return true;
 }
 
@@ -30,6 +33,16 @@ void GameOverScene::Update(float deltaTime) {
 		spriteRenderer.AddVertices(e);
 	}
 	spriteRenderer.EndUpdate();
+
+	const GLFWEW::Window& window = GLFWEW::Window::Instance();
+	const float w = window.Width();
+	const float h = window.Height();
+	const float lineHeight = fontRenderer.LineHeight();
+	fontRenderer.BeginUpdate();
+	fontRenderer.AddString(glm::vec2(-w * 0.5f + 32, h * 0.5f - lineHeight), L"タイトル画面");
+	fontRenderer.AddString(glm::vec2(-128, 0), L"アクションゲーム");
+	fontRenderer.EndUpdate();
+
 }
 /**
 *シーンを描画する
@@ -40,7 +53,10 @@ void GameOverScene::Render()
 	const GLFWEW::Window& window = GLFWEW::Window::Instance();
 	const glm::vec2 screenSize(window.Width(), window.Height());
 	spriteRenderer.Draw(screenSize);
+	fontRenderer.Draw(screenSize);
+
 }
+
 
 /**
 * プレイヤーの入力を処理する.
