@@ -135,7 +135,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\font.fnt" />
+    <None Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\Sprite.frag" />
+    <None Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\Sprite.vert" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\BufferObject.h" />
+    <ClInclude Include="Src\Font.h" />
+    <ClInclude Include="Src\GameOverScene.h" />
+    <ClInclude Include="Src\GamePad.h" />
+    <ClInclude Include="Src\Geometry.h" />
+    <ClInclude Include="Src\GLFWEW.h" />
+    <ClInclude Include="Src\MainGameScene.h" />
+    <ClInclude Include="Src\Scene.h" />
+    <ClInclude Include="Src\Shader.h" />
+    <ClInclude Include="Src\Sprite.h" />
+    <ClInclude Include="Src\StatusScene.h" />
+    <ClInclude Include="Src\Texture.h" />
+    <ClInclude Include="Src\TitleScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\BufferObject.cpp" />
+    <ClCompile Include="Src\Font.cpp" />
+    <ClCompile Include="Src\GameOverScene.cpp" />
+    <ClCompile Include="Src\GLFWEW.cpp" />
+    <ClCompile Include="Src\Main.cpp" />
+    <ClCompile Include="Src\MainGameScene.cpp" />
+    <ClCompile Include="Src\Scene.cpp" />
+    <ClCompile Include="Src\Shader.cpp" />
+    <ClCompile Include="Src\Sprite.cpp" />
+    <ClCompile Include="Src\StatuScene.cpp" />
+    <ClCompile Include="Src\Texture.cpp" />
+    <ClCompile Include="Src\TitleScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\enter_dungeon.jpg" />
+    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\font_0.tga" />
+    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\font_1.tga" />
+    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\GameOver.tga" />
+    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\hyouga.jpg" />
+    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\TitleBg.tga" />
+    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\tree.tga" />
+    <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\wall.tga" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
