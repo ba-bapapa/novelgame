@@ -75,6 +75,10 @@ namespace Shader
 		void SetLightList(const LightList&);
 		void SetViewProjectionMatrix(const glm::mat4&);
 		void SetModelMatrix(const glm::mat4&);
+
+		
+
+
 	private:
 		GLuint id = 0;//プログラムID
 
@@ -92,6 +96,9 @@ namespace Shader
 
 		glm::mat4 matVP = glm::mat4(1); // ビュー・プロジェクション行列.
 		LightList lights;
+
+	
+
 	};
 }//Shader namespace
 #endif // !SHADER_H_INCLUDED

@@ -180,6 +180,9 @@
     <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\wall.tga" />
     <Image Include="Res\kari.tga" />
     <Image Include="Res\kyara.tga" />
+    <Image Include="Res\owari.tga" />
+    <Image Include="Res\save.tga" />
+    <Image Include="Res\sta.tga" />
     <Image Include="Res\title.tga" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -127,5 +127,14 @@
     <Image Include="Res\title.tga">
       <Filter>リソース ファイル</Filter>
     </Image>
+    <Image Include="Res\owari.tga">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="Res\save.tga">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="Res\sta.tga">
+      <Filter>リソース ファイル</Filter>
+    </Image>
   </ItemGroup>
 </Project>

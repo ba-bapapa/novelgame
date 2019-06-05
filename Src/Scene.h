@@ -34,10 +34,17 @@ public:
 	bool IsActive() const;
 	bool IsVisible() const;
 
+	//ƒV[ƒ“Ø‚è‘Ö‚¦‚ÌŠÖ”.
+	const std::string& NextScene()const { return nextScene; }
+	void NextScene(const char* name) { nextScene = name; }
+
 private:
 	std::string name;
 	bool isVisible = true;
 	bool isActive = true;
+
+	
+	std::string nextScene;
 };
 using ScenePtr = std::shared_ptr<Scene>;
 

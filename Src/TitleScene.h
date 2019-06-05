@@ -1,6 +1,7 @@
 #ifndef TITLESCENE_H_INCLUDED
 #define TITLESCENE_H_INCLUDED
 #include "Scene.h"
+#include"Shader.h"
 #include"Sprite.h"
 #include "Font.h"
 #include<vector>
@@ -15,11 +16,12 @@ public:
 	virtual void Update(float) override;
 	virtual void Render() override;
 	virtual void Finalize() override {}
-
+	bool IsFinish() const;
 private:
 	std::vector<Sprite>sprites;
 	SpriteRenderer spriteRenderer;
 	FontRenderer fontRenderer;
-
+	float timer;
+	bool isFinish;
 };
 #endif // !TITLESCENE_H_INCLLUDED
