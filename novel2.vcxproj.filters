@@ -118,5 +118,14 @@
     <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\wall.tga">
       <Filter>リソース ファイル</Filter>
     </Image>
+    <Image Include="Res\kari.tga">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="Res\kyara.tga">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="Res\title.tga">
+      <Filter>リソース ファイル</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -178,6 +178,9 @@
     <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\TitleBg.tga" />
     <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\tree.tga" />
     <Image Include="D:\2年後期\3D\OpenGL3DTutorial2\Res\wall.tga" />
+    <Image Include="Res\kari.tga" />
+    <Image Include="Res\kyara.tga" />
+    <Image Include="Res\title.tga" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

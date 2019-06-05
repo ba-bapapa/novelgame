@@ -9,7 +9,7 @@
 bool StatusScene::Initialize() {
 	spriteRenderer.Init(1000, "Res/Sprite.vert", "Res/Sprite.frag");
 	sprites.reserve(100);
-	Sprite spr(Texture::Image2D::Create("Res/wall.tga"));
+	Sprite spr(Texture::Image2D::Create("Res/title.tga"));
 	spr.Scale(glm::vec2(2));
 	sprites.push_back(spr);
 	fontRenderer.Init(1000);
