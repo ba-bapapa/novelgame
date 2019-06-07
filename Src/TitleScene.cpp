@@ -50,6 +50,8 @@ void TitleScene::Update(float deltaTime) {
 		fontRenderer.BeginUpdate();
 		fontRenderer.AddString(glm::vec2(-w * 0.5f + 32, h * 0.5f - lineHeight), L"タイトル画面");
 		fontRenderer.AddString(glm::vec2(-128, 0), L"ギャルゲー");
+		fontRenderer.AddString(glm::vec2(500, 0), L"はじめる");
+		fontRenderer.AddString(glm::vec2(500, -50), L"戻る");
 		fontRenderer.EndUpdate();
 	
 }
