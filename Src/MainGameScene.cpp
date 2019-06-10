@@ -2,7 +2,7 @@
 #include"StatusScene.h"
 #include"GameOverScene.h"
 #include"GLFWEW.h"
-
+#include"DxLib.h"
 
 /**
 *ƒV[ƒ“‚ğ‰Šú‰»‚·‚é
