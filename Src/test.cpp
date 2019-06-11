@@ -1,6 +1,8 @@
 #include "DxLib.h"
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
+	ChangeWindowMode(TRUE); // ウィンドウモードに設定
+
 	DxLib_Init();   // DXライブラリ初期化処理
 
 
