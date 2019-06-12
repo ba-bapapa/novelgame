@@ -21,9 +21,7 @@ void Menu_Update() {
 	if (CheckHitKey(KEY_INPUT_2) != 0) {//2キーが押されていたら
 		SceneMgr_ChangeScene(eScene_Config);//シーンをロード画面に変更
 	}
-//	if (CheckHitKey(KEY_INPUT_3) != 0) {//3キーが押されていたら
-	//	SceneMgr_ChangeScene(eScene_Config);//シーンを設定画面に変更
-	//}
+
 }
 
 //描画
@@ -32,5 +30,5 @@ void Menu_Draw() {
 	DrawString(0, 0, "タイトル画面。", GetColor(255, 255, 255));
 	DrawString(500, 20, "1NewGame", GetColor(255, 255, 255));
 	DrawString(500, 40, "2LordGame", GetColor(255, 255, 255));
-	//DrawString(500, 60, "3設定", GetColor(255, 255, 255));
+	
 }

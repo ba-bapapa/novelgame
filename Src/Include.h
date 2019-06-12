@@ -3,3 +3,4 @@
 #include "DxLib.h"
 #include "Game.h"
 #include"Menu.h"
+#include"Nakaniwa.h"

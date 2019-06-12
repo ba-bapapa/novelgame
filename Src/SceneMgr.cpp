@@ -34,6 +34,9 @@ void SceneMgr_Update() {
 	case eScene_Config:
 		Config_Update();
 		break;
+	case eScene_Nakaniwa:
+		Nakaniwa_Update();
+		break;
 	}
 }
 
@@ -48,6 +51,9 @@ void SceneMgr_Draw() {
 		break;
 	case eScene_Config:
 		Config_Draw();
+		break;
+	case eScene_Nakaniwa:
+		Nakaniwa_Draw();
 		break;
 	}
 }
@@ -69,6 +75,9 @@ static void SceneMgr_InitializeModule(eScene scene) {
 	case eScene_Config:
 		Config_Initialize();
 		break;
+	case eScene_Nakaniwa:
+		Nakaniwa_Initialize();
+		break;
 	}
 }
 
@@ -83,6 +92,9 @@ static void SceneMgr_FinalizeModule(eScene scene) {
 		break;
 	case eScene_Config:
 		Config_Finalize();
+		break;
+	case eScene_Nakaniwa:
+		Nakaniwa_Finalize();
 		break;
 	}
 }

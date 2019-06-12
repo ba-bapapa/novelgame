@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{E4631B33-B22E-4029-9264-A4D499FCB804}</ProjectGuid>
     <RootNamespace>novel2</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -152,6 +152,7 @@
     <ClInclude Include="Src\ISceneChanger.h" />
     <ClInclude Include="Src\Keyboard.h" />
     <ClInclude Include="Src\Menu.h" />
+    <ClInclude Include="Src\Nakaniwa.h" />
     <ClInclude Include="Src\SceneMgr.h" />
     <ClInclude Include="Src\Task.h" />
   </ItemGroup>
@@ -163,6 +164,7 @@
     <ClCompile Include="Src\Keyboard.cpp" />
     <ClCompile Include="Src\main.cpp" />
     <ClCompile Include="Src\Menu.cpp" />
+    <ClCompile Include="Src\Nakaniwa.cpp" />
     <ClCompile Include="Src\SceneMgr.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
