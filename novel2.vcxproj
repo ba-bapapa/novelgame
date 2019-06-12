@@ -168,6 +168,7 @@
     <ClCompile Include="Src\Menu.cpp" />
     <ClCompile Include="Src\Nakaniwa.cpp" />
     <ClCompile Include="Src\SceneMgr.cpp" />
+    <ClCompile Include="Src\Text.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

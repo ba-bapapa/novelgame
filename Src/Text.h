@@ -36,4 +36,20 @@ public:
 	int CutSpace(std::string&tmpText);
 	//void CheckText(UserClass&User);
 	std::vector<std::string>StringSplot(const std::string&Str, char Sep);
+	
+	void main(class UserClass &user);
+	void modeChange(int &ModeFlag, int&ChangeFlg, UserClass&user);
+
+	void NormalWrite(UserClass&user);
+	void WriteText(UserClass&user);
+	void WriteName();
+	
+	void ReadUpdate(UserClass&user);
+
+	void SetGameData(UserClass&user);
+
+	void CheckControlCode(UserClass&user);
+	void BackCheckControlCode(UserClass&user);
+
+
 };
