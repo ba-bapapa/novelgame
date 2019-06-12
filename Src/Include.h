@@ -4,3 +4,7 @@
 #include "Game.h"
 #include"Menu.h"
 #include"Nakaniwa.h"
+
+#include<string>
+#include<vector>
+#include<sstream>

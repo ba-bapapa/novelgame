@@ -155,6 +155,8 @@
     <ClInclude Include="Src\Nakaniwa.h" />
     <ClInclude Include="Src\SceneMgr.h" />
     <ClInclude Include="Src\Task.h" />
+    <ClInclude Include="Src\Text.h" />
+    <ClInclude Include="Src\UserData.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\BaseScene.cpp" />
