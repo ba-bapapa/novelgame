@@ -1,38 +1,20 @@
-/**
-* @file Main.cpp
-*/
-#include "TitleScene.h"
-#include"GLFWEW.h"
-#include <Windows.h>
-#include<iostream>
+#include "DxLib.h"
+#include "SceneMgr.h"
 
-int main() {
-	GLFWEW::Window& window = GLFWEW::Window::Instance();
-	window.Init(1280, 720, u8"アクションゲーム");
-	SceneStack& sceneStack = SceneStack::Instance();
-	sceneStack.push(std::make_shared<TitleScene>());
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
+	ChangeWindowMode(TRUE), DxLib_Init(), SetDrawScreen(DX_SCREEN_BACK); //ウィンドウモード変更と初期化と裏画面設定
 
-	while (!window.ShouoldClose()) {
-		const float deltaTime = window.DeltaTime();
-		window.UpdateTimer();
+	SceneMgr_Initialize();
 
-		// ESCキーが押されたら終了ウィンドウを表示.
-		if (window.IsKeyPressed(GLFW_KEY_ESCAPE))
-		{
-			if (MessageBox(nullptr, "ゲームを終了しますか？？", "終了", MB_OKCANCEL) == IDOK)
-			{
-				break;
-			}
-		}
-		// バックバッファを消去する.
-		glClearColor(0.8f, 0.2f, 0.1f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		// GLコンテキストのパラメータを設定.
-		glEnable(GL_CULL_FACE);
-		glEnable(GL_DEPTH_TEST);
+	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0) {//画面更新 & メッセージ処理 & 画面消去
 
-		sceneStack.Update(deltaTime);
-		sceneStack.Render();
-		window.SwapBuffers();
+		SceneMgr_Update();  //更新
+		SceneMgr_Draw();    //描画
+
 	}
+
+	SceneMgr_Finalize();
+
+	DxLib_End(); // DXライブラリ終了処理
+	return 0;
 }
