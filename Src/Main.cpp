@@ -1,5 +1,5 @@
-#include "DxLib.h"
-#include "SceneMgr.h"
+#include "Include.h"
+
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	ChangeWindowMode(TRUE), DxLib_Init(), SetDrawScreen(DX_SCREEN_BACK); //ウィンドウモード変更と初期化と裏画面設定

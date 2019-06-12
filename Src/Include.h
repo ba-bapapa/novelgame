@@ -1,0 +1,5 @@
+#include "Config.h"
+#include "SceneMgr.h"
+#include "DxLib.h"
+#include "Game.h"
+#include"Menu.h"

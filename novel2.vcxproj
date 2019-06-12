@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{E4631B33-B22E-4029-9264-A4D499FCB804}</ProjectGuid>
     <RootNamespace>novel2</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -148,6 +148,7 @@
     <ClInclude Include="Src\BaseScene.h" />
     <ClInclude Include="Src\Config.h" />
     <ClInclude Include="Src\Game.h" />
+    <ClInclude Include="Src\Include.h" />
     <ClInclude Include="Src\ISceneChanger.h" />
     <ClInclude Include="Src\Keyboard.h" />
     <ClInclude Include="Src\Menu.h" />

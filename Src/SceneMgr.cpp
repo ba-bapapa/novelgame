@@ -1,8 +1,4 @@
-#include "DxLib.h"
-#include "Config.h"
-#include "Game.h"
-#include "Menu.h"
-#include "SceneMgr.h"
+#include"Include.h"
 
 static eScene mScene = eScene_Menu;    //シーン管理変数
 static eScene mNextScene = eScene_None;    //次のシーン管理変数

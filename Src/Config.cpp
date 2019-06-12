@@ -1,6 +1,4 @@
-#include "Config.h"
-#include "SceneMgr.h"
-#include "DxLib.h"
+#include"Include.h"
 
 static int mImageHandle;    //‰æ‘œƒnƒ“ƒhƒ‹Ši”[—p•Ï”
 
