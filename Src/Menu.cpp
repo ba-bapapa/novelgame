@@ -1,4 +1,5 @@
 #include "DxLib.h"
+#include"Include.h"
 
 #define GRAPHIC_BACKGROUND_FILENAME "Res\\A.jpg"
 #define GRAPHIC_SELECTBOX_FILENAME "Res\\01.png"
@@ -15,7 +16,8 @@
 
 #define SELECT_BOX_MESSAGE_MAX_LENGTH 100
 #define SELECT_BOX_HIDE 0
-#define SELECT_BOX_SHOW 1
+#define SELECT_BOX_SHOW 1
+
 
 //選択肢ボックス関係
 //白
@@ -29,12 +31,7 @@ char g_selectBoxMessage[2][SELECT_BOX_MESSAGE_MAX_LENGTH];
 //選択ボックスを表示するかどうか 0: 非 表 示 1: 表 示
 int g_selectBoxVisibleFlag;
 
-//プロトタイプ宣言
-void initSelectBox();
-int isContainMousePointer(int x, int y, int width, int height);
-void drawSelectBox();
-void setSelectBoxMessage(const char* message1, const char* message2);
-int isClickedSelectBox();
+
 //選択ボックスの初期化
 void initSelectBox()
 {
@@ -47,7 +44,8 @@ void initSelectBox()
 	memset(g_selectBoxMessage[1], 0, SELECT_BOX_MESSAGE_MAX_LENGTH);
 	//選択ボックスを表示しない
 	g_selectBoxVisibleFlag = SELECT_BOX_HIDE;
-}
+}
+
 
 //指定したボックス内にマウスが存在するかどうか
 //戻り値 1: 存 在 す る 0: 存 在 し な い
@@ -61,11 +59,22 @@ void initSelectBox()
  //ボックス内にマウス座標が存在するか
  if ((mouseX >= x && mouseX <= x + width) &&
 	 (mouseY >= y && mouseY <= y + height)) {
-	return 1; }
+	return 1;
+ }
   return 0;
  
  }
  
+ //更新
+/* void Menu_Update() {
+	 if (CheckHitKey(KEY_INPUT_1) != 0) {//1キーが押されていたら
+		 SceneMgr_ChangeScene(eScene_Game);//シーンをゲーム画面に変更
+	 }
+	 if (CheckHitKey(KEY_INPUT_2) != 0) {//2キーが押されていたら
+		 SceneMgr_ChangeScene(eScene_Config);//シーンをロード画面に変更
+	 }
+
+ }*/
 
 //選択ボックスにメッセージをセットする
 /*void setSelectBoxMessage(const char* message1, const char* message2)
@@ -75,7 +84,8 @@ void initSelectBox()
 	strncpy(g_selectBoxMessage[1], message2, SELECT_BOX_MESSAGE_MAX_LENGTH);
 	//選択ボックスを表示
 	g_selectBoxVisibleFlag = SELECT_BOX_SHOW;
-}*/
+}
+*/
 
  //選択肢ボックスを描画する
  void drawSelectBox()
@@ -158,7 +168,8 @@ void initSelectBox()
 		 }
 	 }
 	 return 0;
- }
+ }
+
 
  int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	 LPSTR lpCmdLine, int nCmdShow)
@@ -195,7 +206,8 @@ void initSelectBox()
 	 //選択ボックスの読み込み
 	// g_selectBoxGraphicHandle = LoadGraph(GRAPHIC_SELECTBOX_FILENAME);
 
-	 int tmpClicked = 0; //テスト用
+	 int tmpClicked = 0; //テスト用
+
 
 	//メインループ
 	 while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0) {
@@ -227,7 +239,9 @@ void initSelectBox()
 		 }
 		 else if (tmpClicked == 2) {
 			 DrawString(50, 50, "選択肢2が ク リ ッ ク さ れ ま し た", g_whiteColor);
-		 }*/
+
+		 }*/
+
 
 		 ScreenFlip();
 
