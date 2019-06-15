@@ -5,8 +5,8 @@ class UserClass {
 private:
 
 	int PageFlag;//今のページ
-	struct SaveData_rec SaveData;//セーブデータ
-	struct ConfigData_rec ConfigData;//コンフィグ
+//	struct SaveData_rec SaveData;//セーブデータ
+	//struct ConfigData_rec ConfigData;//コンフィグ
 	int BGM;
 	int BackGround;
 	int Char;
@@ -16,12 +16,12 @@ public:
 	UserClass();
 	void SetPage(int Page);//関数初期化
 	int GetPage();
-	void SetSaveData(SaveData_rec&SaveData);
-	SaveData_rec GetSaveData();
+//	void SetSaveData(SaveData_rec&SaveData);
+	//SaveData_rec GetSaveData();
 	void LoadConfigData();
 	void SaveConfigData();
-	void SetConfigData(ConfigData_rec&ConfigDatya);
-	ConfigData_rec SetConfigData();
+//	void SetConfigData(ConfigData_rec&ConfigDatya);
+	//ConfigData_rec SetConfigData();
 
 	//各コンフィグデータを返す
 	int  GetTextSpeed();
