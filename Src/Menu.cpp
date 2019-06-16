@@ -19,7 +19,24 @@
 #define SELECT_BOX_SHOW 1
 
 
-static int mImageHandle;    //画像ハンドル格納用変数
+static int mImageHandle;    //画像ハンドル格納用
+
+
+//更新
+/*void Menu_Update() {
+if (CheckHitKey(KEY_INPUT_1) != 0) {//1キーが押されていたら
+SceneMgr_ChangeScene(eScene_Game);//シーンをゲーム画面に変更
+}
+if (CheckHitKey(KEY_INPUT_2) != 0) {//2キーが押されていたら
+SceneMgr_ChangeScene(eScene_Config);//シーンをロード画面に変更
+}
+
+}
+
+void Menu_Draw() {
+	DrawGraph(0, 0, mImageHandle, FALSE);
+	DrawString(0, 0, "メニュー画面です。", GetColor(255, 255, 255));
+}*/
 
 
 //選択肢ボックス関係
@@ -68,23 +85,6 @@ void initSelectBox()
  
  }
  
- //更新
-/*void Menu_Update() {
-	 if (CheckHitKey(KEY_INPUT_1) != 0) {//1キーが押されていたら
-		 SceneMgr_ChangeScene(eScene_Game);//シーンをゲーム画面に変更
-	 }
-	 if (CheckHitKey(KEY_INPUT_2) != 0) {//2キーが押されていたら
-		 SceneMgr_ChangeScene(eScene_Config);//シーンをロード画面に変更
-	 }
-
- }*/
-
-
- void Menu_Draw() {
-	 DrawGraph(0, 0, mImageHandle, FALSE);
-	 DrawString(0, 0, "メニュー画面です。", GetColor(255, 255, 255));
- }
-
 
 //選択ボックスにメッセージをセットする
 /*void setSelectBoxMessage(const char* message1, const char* message2)
@@ -215,6 +215,8 @@ void initSelectBox()
 	 g_backgroundGraphic = LoadGraph(GRAPHIC_BACKGROUND_FILENAME);
 	 //選択ボックスの読み込み
 	// g_selectBoxGraphicHandle = LoadGraph(GRAPHIC_SELECTBOX_FILENAME);
+
+
 
 	 int tmpClicked = 0; //テスト用
 
