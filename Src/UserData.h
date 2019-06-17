@@ -1,5 +1,18 @@
 #include"Include.h"
 //ユーザクラス
+struct SaveData_rec {
+	short int   SceneCount;	//シーンカウント
+	short int   TextCount;	//テキストカウント
+	short int   SerifCount;	//セリフカウント
+	int         BGMCode;	//BGMコード
+	int         BackCode;	//背景コード
+	int			CharCode;	//キャラクターコード
+	int			Year;		//年
+	int			Mon;		//月
+	int			Day;		//日
+	int         TextLength;	//テキストの文字数(バイト数)
+	char		Text[61];	//テキスト1行(これは100%ﾊﾞｯﾌｧｵｰﾊﾞｰﾌﾛｰの元になるから、std::stringにしておくこと！)
+};
 
 class UserClass {
 private:
@@ -16,8 +29,8 @@ public:
 	UserClass();
 	void SetPage(int Page);//関数初期化
 	int GetPage();
-//	void SetSaveData(SaveData_rec&SaveData);
-	//SaveData_rec GetSaveData();
+	void SetSaveData(SaveData_rec&SaveData);
+	SaveData_rec GetSaveData();
 	void LoadConfigData();
 	void SaveConfigData();
 //	void SetConfigData(ConfigData_rec&ConfigDatya);
