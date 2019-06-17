@@ -1,12 +1,13 @@
-#include "Menu.h"
-#include "SceneMgr.h"
-#include "DxLib.h"
+#include "Include.h"
+
 
 static int mImageHandle;    //画像ハンドル格納用変数
 
+int MouseA;
 							//初期化
 void Menu_Initialize() {
 	mImageHandle = LoadGraph("Res\\A.jpg");    //画像のロード
+
 }
 
 //終了処理
@@ -16,10 +17,12 @@ void Menu_Finalize() {
 
 //更新
 void Menu_Update() {
-	if (CheckHitKey(KEY_INPUT_G) != 0) {//Gキーが押されていたら
+	MouseA = GetMouseInput();                //マウスの入力状態取得
+	if (MouseA&MOUSE_INPUT_LEFT) {//左クリック押されていたら
 		SceneMgr_ChangeScene(eScene_Game);//シーンをゲーム画面に変更
 	}
-	if (CheckHitKey(KEY_INPUT_C) != 0) {//Cキーが押されていたら
+	
+	if (MouseA & MOUSE_INPUT_RIGHT) {//Cキーが押されていたら
 		SceneMgr_ChangeScene(eScene_Config);//シーンを設定画面に変更
 	}
 }

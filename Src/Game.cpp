@@ -1,8 +1,7 @@
-#include "Game.h"
-#include "SceneMgr.h"
-#include "DxLib.h"
+#include "Include.h"
 
 static int mImageHandle;    //画像ハンドル格納用変数
+int MouseB;
 
 							//初期化
 void Game_Initialize() {
@@ -16,7 +15,9 @@ void Game_Finalize() {
 
 //更新
 void Game_Update() {
-	if (CheckHitKey(KEY_INPUT_ESCAPE) != 0) { //Escキーが押されていたら
+	MouseB = GetMouseInput();
+
+	if (MouseB & MOUSE_INPUT_RIGHT) { //Escキーが押されていたら
 		SceneMgr_ChangeScene(eScene_Menu);//シーンをメニューに変更
 	}
 }

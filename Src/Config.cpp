@@ -1,6 +1,4 @@
-#include "Config.h"
-#include "SceneMgr.h"
-#include "DxLib.h"
+#include "Include.h"
 
 static int mImageHandle;    //画像ハンドル格納用変数
 
@@ -24,6 +22,6 @@ void Config_Update() {
 //描画
 void Config_Draw() {
 	DrawGraph(0, 0, mImageHandle, FALSE);
-	DrawString(0, 0, "設定画面です。", GetColor(255, 255, 255));
+	DrawString(0, 0, "設定画面です。", GetColor(255, 255, 255));//色
 	DrawString(0, 20, "Escキーを押すとメニュー画面に戻ります。", GetColor(255, 255, 255));
 }
