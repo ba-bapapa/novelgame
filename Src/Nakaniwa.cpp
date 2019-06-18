@@ -51,4 +51,5 @@ void Nakaniwa_Draw() {
 	DrawString(250, 0, "～中庭～", GetColor(255, 300, 255));
 	DrawString(600, 200, "Seve", GetColor(255, 255, 255));
 	DrawString(600, 232, "Lode ", GetColor(255, 255, 255));
+	DrawString(0, 400, "テキスト読み込み予定\n1終わりへ\n2終わりへ", GetColor(255, 255, 255));
 }

@@ -34,5 +34,5 @@ void Game_Draw() {
 	DrawGraph(0, 400, mImageText, FALSE);
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);  //透過おわり
 	DrawString(0, 0, "～プロローグ～", GetColor(300, 255, 255));
-	DrawString(0, 400, "テキスト読み込み予定", GetColor(255, 255, 255));
+	DrawString(0, 400, "テキスト読み込み予定\nクリックで次のシーンへ", GetColor(255, 255, 255));
 	}

@@ -9,7 +9,8 @@ int MouseA;
 
 //プロトタイプ宣言
 int isContainMousePointer(int x, int y, int width, int height);
-void drawSelectBox();
+void drawSelectBox();
+
 
 //指定したボックス内にマウスが存在するかどうか
 //戻り値 1: 存 在 す る 0: 存 在 し な い
@@ -47,6 +48,7 @@ void Menu_Update() {
 	MouseA = GetMouseInput();                //マウスの入力状態取得
 	if (MouseA&MOUSE_INPUT_LEFT) {//左クリック押されていた
 		WaitTimer(1000);
+
 		SceneMgr_ChangeScene(eScene_Game);//シーンをゲーム画面に変更
 	}
 	
