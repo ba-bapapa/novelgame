@@ -11,7 +11,7 @@
 #include<vector>
 #include<sstream>
 #include"BaseScene.h"
-
+#include"ISceneChanger.h"
 
 /*namespace Mouse {
 	enum{LEFT,RIGHT};

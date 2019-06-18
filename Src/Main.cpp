@@ -37,6 +37,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		DrawRotaGraph(x, y,size,0.0,Image,TRUE);  //画像をx,yの位置にサイズで描画
 	}
 
+	
+
 	SceneMgr_Finalize();
 
 	WaitKey();     // キー入力があるまで待機

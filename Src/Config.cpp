@@ -22,6 +22,6 @@ void Config_Update() {
 //描画
 void Config_Draw() {
 	DrawGraph(0, 0, mImageHandle, FALSE);
-	DrawString(0, 0, "設定画面です。", GetColor(255, 255, 255));//色
+	DrawString(0, 0, "未定。", GetColor(255, 255, 255));//色
 	DrawString(0, 20, "Escキーを押すとメニュー画面に戻ります。", GetColor(255, 255, 255));
 }

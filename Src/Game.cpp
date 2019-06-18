@@ -20,7 +20,8 @@ void Game_Finalize() {
 //更新
 void Game_Update() {
 	MouseB = GetMouseInput();
-	if (MouseB &MOUSE_INPUT_RIGHT) { //Escキーが押されていたら
+	if (MouseB &MOUSE_INPUT_LEFT) { //Escキーが押されていたら
+		WaitTimer(1000);
 		SceneMgr_ChangeScene(eScene_Nakaniwa);//シーンをメニューに変更
 	}
 }
@@ -29,7 +30,9 @@ void Game_Update() {
 void Game_Draw() {
 	DrawGraph(0, 0, mImageHandle, FALSE);
 	DrawGraph(200, 100, mImageChara, FALSE);
+	SetDrawBlendMode(DX_BLENDMODE_ALPHA, 128);   //透過はじまり
 	DrawGraph(0, 400, mImageText, FALSE);
+	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);  //透過おわり
 	DrawString(0, 0, "～プロローグ～", GetColor(300, 255, 255));
 	DrawString(0, 400, "テキスト読み込み予定", GetColor(255, 255, 255));
-}
+	}

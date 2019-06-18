@@ -28,14 +28,11 @@ void BaseScene_Finalize() {
 //更新
 void BaseScene_Update() {
 	MouseE = GetMouseInput();                //マウスの入力状態取得
-	if (MouseE&MOUSE_INPUT_RIGHT) {//左クリック押されていた
+	if (CheckHitKey(KEY_INPUT_ESCAPE)!=0) {//Esc押されていた
 
 		SceneMgr_ChangeScene(eScene_Menu);//シーンをゲーム画面に変更
 	}
 
-	if (CheckHitKey(KEY_INPUT_C) != 0) {//Aキーが押されていたら
-		SceneMgr_ChangeScene(eScene_Config);//シーンを設定画面に変更
-	}
 }
 
 //描画
@@ -44,8 +41,10 @@ void BaseScene_Draw() {
 	DrawGraph(600, 200, mImageText, FALSE);
 	DrawGraph(600, 232, mImageText2, FALSE);
 	DrawGraph(200, 100, mImageChara, FALSE);
+	SetDrawBlendMode(DX_BLENDMODE_ALPHA, 128);   //透過はじまり
 	DrawGraph(0, 400, mImageText3, FALSE);
-	DrawString(250, 0, "～教室～", GetColor(255, 255, 300));
+	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);  //透過おわり
+	DrawString(250, 0, "～終わり～", GetColor(255, 255, 300));
 	DrawString(600, 200, "Seve", GetColor(255, 255, 255));
 	DrawString(600, 232, "Lode ", GetColor(255, 255, 255));
 }

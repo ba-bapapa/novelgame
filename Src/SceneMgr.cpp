@@ -41,6 +41,9 @@ void SceneMgr_Update() {
 	case eScene_BaseScene:
 		BaseScene_Update();
 		break;
+	case eScene_ISceneChanger:
+		ISceneChanger_Update();
+		break;
 	}
 }
 
@@ -61,6 +64,9 @@ void SceneMgr_Draw() {
 		break;
 	case eScene_BaseScene:
 		BaseScene_Draw();
+		break;
+	case eScene_ISceneChanger:
+		ISceneChanger_Draw();
 		break;
 	}
 }
@@ -88,6 +94,9 @@ static void SceneMgr_InitializeModule(eScene scene) {
 	case eScene_BaseScene:
 		BaseScene_Initialize();
 		break;
+	case eScene_ISceneChanger:
+		ISceneChanger_Initialize();
+		break;
 	}
 }
 
@@ -108,6 +117,9 @@ static void SceneMgr_FinalizeModule(eScene scene) {
 		break;
 	case eScene_BaseScene:
 		BaseScene_Finalize();
+		break;
+	case eScene_ISceneChanger:
+		ISceneChanger_Finalize();
 		break;
 	}
 }

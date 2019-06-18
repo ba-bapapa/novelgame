@@ -4,6 +4,7 @@ typedef enum {
 	eScene_Config,  //İ’è‰æ–Ê
 	eScene_Nakaniwa,//’†’ë
 	eScene_BaseScene,
+	eScene_ISceneChanger,
 	eScene_None,    //–³‚µ
 } eScene;
 

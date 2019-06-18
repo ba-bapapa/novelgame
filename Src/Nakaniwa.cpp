@@ -29,11 +29,13 @@ void Nakaniwa_Finalize() {
 void Nakaniwa_Update() {
 	MouseD = GetMouseInput();                //マウスの入力状態取得
 	if (MouseD&MOUSE_INPUT_LEFT) {//左クリック押されていた
+		WaitTimer(1000);
 		SceneMgr_ChangeScene(eScene_BaseScene);//シーンをゲーム画面に変更
 	}
 
-	if (CheckHitKey(KEY_INPUT_C) != 0) {//Aキーが押されていたら
-		SceneMgr_ChangeScene(eScene_Config);//シーンを設定画面に変更
+	if (MouseD &MOUSE_INPUT_RIGHT) {//右クリックが押されていたら
+		WaitTimer(1000);
+		SceneMgr_ChangeScene(eScene_ISceneChanger);//シーンを設定画面に変更
 	}
 }
 
@@ -43,7 +45,9 @@ void Nakaniwa_Draw() {
 	DrawGraph(600, 200, mImageText, FALSE);
 	DrawGraph(600, 232, mImageText2, FALSE);
 	DrawGraph(200, 100, mImageChara, FALSE);
+	SetDrawBlendMode(DX_BLENDMODE_ALPHA, 128);   //透過はじめ
 	DrawGraph(0, 400, mImageText3, FALSE);
+	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);  //透過おわり
 	DrawString(250, 0, "～中庭～", GetColor(255, 300, 255));
 	DrawString(600, 200, "Seve", GetColor(255, 255, 255));
 	DrawString(600, 232, "Lode ", GetColor(255, 255, 255));
