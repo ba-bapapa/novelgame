@@ -92,7 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>lib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -128,7 +128,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>lib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -153,7 +153,6 @@
     <ClInclude Include="Src\ISceneChanger.h" />
     <ClInclude Include="Src\Keyboard.h" />
     <ClInclude Include="Src\Menu.h" />
-    <ClInclude Include="Src\Mouse.h" />
     <ClInclude Include="Src\Nakaniwa.h" />
     <ClInclude Include="Src\SceneMgr.h" />
     <ClInclude Include="Src\Singleton.h" />
@@ -170,10 +169,10 @@
     <ClCompile Include="Src\Keyboard.cpp" />
     <ClCompile Include="Src\main.cpp" />
     <ClCompile Include="Src\Menu.cpp" />
-    <ClCompile Include="Src\Mouse.cpp" />
     <ClCompile Include="Src\Nakaniwa.cpp" />
     <ClCompile Include="Src\SceneMgr.cpp" />
-    <None Include="Src\Text.cpp" />
+    <ClCompile Include="Src\Text.cpp" />
+    <ClCompile Include="Src\UserData.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

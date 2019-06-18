@@ -1,4 +1,4 @@
-#include"Include.h"
+
 //ユーザクラス
 struct SaveData_rec {
 	short int   SceneCount;	//シーンカウント
@@ -27,10 +27,10 @@ private:
 
 public:
 	UserClass();
-	void SetPage(int Page);//関数初期化
+	//bvoid SetPage(int Page);//関数初期化
 	int GetPage();
-	void SetSaveData(SaveData_rec&SaveData);
-	SaveData_rec GetSaveData();
+	//void SetSaveData(SaveData_rec&SaveData);
+	//SaveData_rec GetSaveData();
 	void LoadConfigData();
 	void SaveConfigData();
 //	void SetConfigData(ConfigData_rec&ConfigDatya);
@@ -47,15 +47,15 @@ public:
 	void ReadUpdate();
 
 	//サウンドコード
-	void SetBGMCode(int Code);
+//	void SetBGMCode(int Code);
 	int  GetBGMCode();
 
 	//背景コード
-	void SetBackCode(int Code);
+	//void SetBackCode(int Code);
 	int  GetBackCode();
 
 	//キャラクタコード
-	void SetCharacterCode(int Code);
+	//void SetCharacterCode(int Code);
 	int  GetCharacterCode();
 
 	//シークレットフラグ

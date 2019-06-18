@@ -6,13 +6,14 @@
 #include"Nakaniwa.h"
 #include"Input.h"
 #include"Singleton.h"
-#include"Mouse.h"
 #include<string>
 #include<vector>
 #include<sstream>
 #include"BaseScene.h"
 #include"ISceneChanger.h"
+#include"UserData.h"
+#include"Text.h"
 
-/*namespace Mouse {
-	enum{LEFT,RIGHT};
-}*/
+namespace PAGE {
+	enum{TITLE};
+}
