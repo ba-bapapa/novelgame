@@ -1,8 +1,6 @@
 /*
 *テキストクラス
 */
-#include"Include.h"
-#include"UserData.h"
 
 class TextClass {
 private:
@@ -18,6 +16,7 @@ private:
 	int TextCount;
 	int SceneCount;
 	int SerifCount;
+	int AutoFlag;
 
 	bool Selectflg = false;//選択肢出現
 	int TextGraphEndflg;//テキスト全文描画完了フラグ
@@ -33,7 +32,7 @@ private:
 public:
 	//初期化
 	TextClass();
-	void InitVar();
+	void Initialze();
 	void Load();
 	int CutSpace(std::string&tmpText);
 	void CheckText(UserClass&User);
@@ -48,10 +47,10 @@ public:
 	void WriteName();
 
 	void CheckRead();
-	void ControlRead();
-	void ReadUpdate(UserClass&user);
+	//void ControlRead();
+	//void ReadUpdate(UserClass&user);
 
-	void SetGameData(UserClass&user);
+	//void SetGameData(UserClass&user);
 
 	void CheckCotrolCode(UserClass &User);
 	void BackCheckControlCode(UserClass&user);
