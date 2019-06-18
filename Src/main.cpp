@@ -4,6 +4,8 @@
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	ChangeWindowMode(TRUE), DxLib_Init(), SetDrawScreen(DX_SCREEN_BACK); //ウィンドウモード変更と初期化と裏画面設定
 
+	StartJoypadVibration(DX_INPUT_PAD1, 1000, 2000);//揺らす
+
 	SceneMgr_Initialize();
 	double size = 1.0;
 	int Handle, Count = 0;
