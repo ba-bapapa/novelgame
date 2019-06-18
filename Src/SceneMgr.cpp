@@ -7,7 +7,7 @@ static eScene mNextScene = eScene_None;    //次のシーン管理変数
 static void SceneMgr_InitializeModule(eScene scene);//指定モジュールを初期化する
 static void SceneMgr_FinalizeModule(eScene scene);//指定モジュールの終了処理を行う
 
-												  //初期化
+  //初期化
 void SceneMgr_Initialize() {
 	SceneMgr_InitializeModule(mScene);
 }
@@ -38,6 +38,9 @@ void SceneMgr_Update() {
 	case eScene_Nakaniwa:
 		Nakaniwa_Update();
 		break;
+	case eScene_BaseScene:
+		BaseScene_Update();
+		break;
 	}
 }
 
@@ -55,6 +58,9 @@ void SceneMgr_Draw() {
 		break;
 	case eScene_Nakaniwa:
 		Nakaniwa_Draw();
+		break;
+	case eScene_BaseScene:
+		BaseScene_Draw();
 		break;
 	}
 }
@@ -79,6 +85,9 @@ static void SceneMgr_InitializeModule(eScene scene) {
 	case eScene_Nakaniwa:
 		Nakaniwa_Initialize();
 		break;
+	case eScene_BaseScene:
+		BaseScene_Initialize();
+		break;
 	}
 }
 
@@ -96,6 +105,9 @@ static void SceneMgr_FinalizeModule(eScene scene) {
 		break;
 	case eScene_Nakaniwa:
 		Nakaniwa_Finalize();
+		break;
+	case eScene_BaseScene:
+		BaseScene_Finalize();
 		break;
 	}
 }

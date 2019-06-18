@@ -3,6 +3,7 @@ typedef enum {
 	eScene_Game,    //ゲーム画面
 	eScene_Config,  //設定画面
 	eScene_Nakaniwa,//中庭
+	eScene_BaseScene,
 	eScene_None,    //無し
 } eScene;
 
@@ -11,5 +12,5 @@ void SceneMgr_Finalize();//終了処理
 void SceneMgr_Update();//更新
 void SceneMgr_Draw();//描画
 
-					 // 引数 nextScene にシーンを変更する
+ // 引数 nextScene にシーンを変更する
 void SceneMgr_ChangeScene(eScene nextScene);

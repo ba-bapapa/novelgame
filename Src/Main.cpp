@@ -39,6 +39,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	SceneMgr_Finalize();
 
+	WaitKey();     // キー入力があるまで待機
 	DxLib_End(); // DXライブラリ終了処理
 	return 0;
 }

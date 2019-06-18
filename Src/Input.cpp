@@ -72,3 +72,4 @@ int MouseClass::GetWheel() {
 int MouseClass::GetState(int MouseCode) {
 	return MouseState[MouseCode];
 }
+

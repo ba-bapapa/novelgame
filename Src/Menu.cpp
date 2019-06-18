@@ -21,7 +21,8 @@ if ((mouseX >= x && mouseX <= x + width) &&
 	
 }
 return 0;
-}
+}
+
 
 
 //初期化
@@ -42,7 +43,7 @@ void Menu_Finalize() {
 void Menu_Update() {
 	MouseA = GetMouseInput();                //マウスの入力状態取得
 	if (MouseA&MOUSE_INPUT_LEFT) {//左クリック押されていた
-
+		
 		SceneMgr_ChangeScene(eScene_Game);//シーンをゲーム画面に変更
 	}
 	

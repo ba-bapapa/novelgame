@@ -2,7 +2,7 @@
 
 static int mImageHandle;    //画像ハンドル格納用変数
 
-							//初期化
+//初期化
 void Config_Initialize() {
 	mImageHandle = LoadGraph("Res\\C.jpg");//画像のロード
 }
