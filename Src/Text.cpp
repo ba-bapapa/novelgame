@@ -195,7 +195,6 @@ void TextClass::Main(UserClass &User) {
 	if (WriteMode != EYECATCH) CheckCotrolCode(User);
 
 	
-
 	//テキスト描画
 	if (WriteMode == NORMAL) NormalWrite(User);	//通常テキスト描画
 
