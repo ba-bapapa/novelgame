@@ -11,11 +11,12 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	int Handle, Count = 0;
 	Handle = LoadSoundMem("Res\\073.mp3"); // サウンド/1up.wavをロードし、識別番号をHandleに格納
 	int x, y, Mouse, Wheel, Image;
-
+	
 	Image = LoadGraph("Res\\A.png");//画像ロード
-
+	
+	
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0) {//画面更新 & メッセージ処理 & 画面消去
-
+		
 		if (Count % 120 == 0) { // 2秒に一度
 			PlaySoundMem(Handle, DX_PLAYTYPE_BACK); // 効果音を再生する
 		}
@@ -40,8 +41,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	}
 
 	
-
 	SceneMgr_Finalize();
+	
 
 	WaitKey();     // キー入力があるまで待機
 	DxLib_End(); // DXライブラリ終了処理
