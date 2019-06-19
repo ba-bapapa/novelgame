@@ -356,7 +356,7 @@ void TextClass::WriteText(UserClass &User) {
 				WriteText[0] = Text[SceneCount][TextCount + Line][LoopCount];												//1byte–Ú‘ã“ü
 				WriteText[1] = Text[SceneCount][TextCount + Line][LoopCount + 1];											//2byte–Ú‘ã“ü
 				WriteText[2] = '\0';																					//ƒkƒ‹•¶Žš‚ð‘ã“ü
-				//DrawStringToHandle(DrawX+WriteX,DrawY + ( LineSpace * Line ),WriteText,GetColor(200,200,200),TextFontHandle);	//ˆê•¶Žš•`‰æ
+				DrawStringToHandle(DrawX+WriteX,DrawY + ( LineSpace * Line ),WriteText,GetColor(200,200,200),TextFontHandle);	//ˆê•¶Žš•`‰æ
 				//DrawStringShadow(DrawX + WriteX, DrawY + (LineSpace * Line), WriteText, GetColor(233, 233, 233), GetColor(5, 5, 5));
 				LoopCount += 2;																							//ˆê•¶Žš•ªƒJƒEƒ“ƒgƒAƒbƒv
 			}
