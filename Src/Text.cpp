@@ -55,7 +55,7 @@ void TextClass::Load() {
 	while (Scene <= SceneMax) {
 
 		//ファイル名を取得
-		sprintf(FileName, "test.txt");
+		sprintf(FileName, "Res\\test.txt");
 
 		//ファイルオープン
 		FileHandle = FileRead_open(FileName);

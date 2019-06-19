@@ -4,7 +4,7 @@
 	 PageFlag = PAGE::TITLE;
 	 
 }
-
+ 
   int UserClass::GetTextSpeed() {
 	  int TextSpeed;
 /*

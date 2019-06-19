@@ -145,32 +145,13 @@
     <Image Include="Res\title.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Src\BaseScene.h" />
-    <ClInclude Include="Src\Config.h" />
-    <ClInclude Include="Src\Game.h" />
     <ClInclude Include="Src\Include.h" />
     <ClInclude Include="Src\Input.h" />
-    <ClInclude Include="Src\ISceneChanger.h" />
-    <ClInclude Include="Src\Keyboard.h" />
-    <ClInclude Include="Src\Menu.h" />
-    <ClInclude Include="Src\Nakaniwa.h" />
-    <ClInclude Include="Src\SceneMgr.h" />
-    <ClInclude Include="Src\Singleton.h" />
-    <ClInclude Include="Src\Task.h" />
     <ClInclude Include="Src\Text.h" />
     <ClInclude Include="Src\UserData.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Src\BaseScene.cpp" />
-    <ClCompile Include="Src\Config.cpp" />
-    <ClCompile Include="Src\Game.cpp" />
     <ClCompile Include="Src\Input.cpp" />
-    <ClCompile Include="Src\ISceneChanger.cpp" />
-    <ClCompile Include="Src\Keyboard.cpp" />
-    <ClCompile Include="Src\main.cpp" />
-    <ClCompile Include="Src\Menu.cpp" />
-    <ClCompile Include="Src\Nakaniwa.cpp" />
-    <ClCompile Include="Src\SceneMgr.cpp" />
     <ClCompile Include="Src\Text.cpp" />
     <ClCompile Include="Src\UserData.cpp" />
   </ItemGroup>
