@@ -20,9 +20,13 @@ void Game_Finalize() {
 //更新
 void Game_Update() {
 	MouseB = GetMouseInput();
-	if (MouseB &MOUSE_INPUT_LEFT) { //Escキーが押されていたら
+	if (MouseB &MOUSE_INPUT_LEFT) { //左クリックキーが押されていたら
 		WaitTimer(1000);
 		SceneMgr_ChangeScene(eScene_Nakaniwa);//シーンをメニューに変更
+	}
+	if (CheckHitKey(KEY_INPUT_RETURN) != 0) {//エンターキーが押されていたら
+		SceneMgr_ChangeScene(eScene_Nakaniwa);//シーンをメニューに変更
+		WaitTimer(1000);
 	}
 }
 

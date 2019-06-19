@@ -33,10 +33,18 @@ void Nakaniwa_Update() {
 		WaitTimer(1000);
 		SceneMgr_ChangeScene(eScene_BaseScene);//シーンをゲーム画面に変更
 	}
+	if (CheckHitKey(KEY_INPUT_NUMPAD1) != 0) {//エンターキーが押されていたら
+		SceneMgr_ChangeScene(eScene_BaseScene);//シーンをメニューに変更
+		WaitTimer(1000);
+	}
 
 	if (MouseD &MOUSE_INPUT_RIGHT) {//右クリックが押されていたら
 		WaitTimer(1000);
 		SceneMgr_ChangeScene(eScene_ISceneChanger);//シーンを設定画面に変更
+	}
+	if (CheckHitKey(KEY_INPUT_NUMPAD2) != 0) {//エンターキーが押されていたら
+		SceneMgr_ChangeScene(eScene_ISceneChanger);//シーンをメニューに変更
+		WaitTimer(1000);
 	}
 }
 

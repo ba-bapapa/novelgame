@@ -51,6 +51,10 @@ void Menu_Update() {
 
 		SceneMgr_ChangeScene(eScene_Game);//シーンをゲーム画面に変更
 	}
+	if (CheckHitKey(KEY_INPUT_RETURN) != 0) {//エンターキーが押されていたら
+		SceneMgr_ChangeScene(eScene_Game);//シーンをメニューに変更
+		WaitTimer(1000);
+	}
 	
 	if (MouseA&MOUSE_INPUT_RIGHT) {//右クリックが押されていたら
 		WaitTimer(1000);
